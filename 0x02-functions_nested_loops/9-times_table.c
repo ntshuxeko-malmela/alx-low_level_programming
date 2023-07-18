@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * times_table - Prints the 9 times table
+ *
+ * Description: This function prints the multiplication table
+ *              for the numbers 0 to 9, inclusive.
+ */
 void times_table(void)
 {
 	int digit, num, result;
