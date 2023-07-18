@@ -10,26 +10,22 @@
 
 int main(void)
 {
-	int count, num1 = 0, num2 = 1, nextNum;
+	int inc;
+	unsigned long n1 = 0, n2 = 1, n3;
 
-	/* Print the first two Fibonacci numbers (1 and 2) */
-	printf("%d, %d", num1, num2);
-
-	/* Generate and print the remaining 48 Fibonacci numbers */
-	for (count = 3; count <= 50; count++)
+	for (inc = 0; inc < 50; inc++)
 	{
-		/* Compute the next Fibonacci number */
-		nextNum = num1 + num2;
+		n3 = n1 + n2;
+		printf("%lu", n3);
 
-		/* Print the Fibonacci number */
-		printf(", %d", nextNum);
+		n1 = n2;
+		n2 = n3;
 
-		/* Update the values for the next iteration */
-		num1 = num2;
-		num2 = nextNum;
+		if (inc == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-
-	printf("\n");
 
 	return (0);
 }
