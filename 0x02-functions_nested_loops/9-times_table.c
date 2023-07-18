@@ -14,8 +14,8 @@ void times_table(void)
 			product = row * column;
 
 			if (column != 0)
- 			{
-  				_putchar(',');
+			{
+				_putchar(',');
 				_putchar(' ');
 			}
 
