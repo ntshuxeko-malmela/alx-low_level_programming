@@ -16,7 +16,7 @@ void print_to_98(int n)
 			printf("%d", i);
 
 			if (i != 98)
-				printf(", ");  // Separate numbers by comma and space
+				printf(", ");
 		}
 	}
 	else
@@ -26,9 +26,9 @@ void print_to_98(int n)
 			printf("%d", i);
 
 			if (i != 98)
-				printf(", ");  // Separate numbers by comma and space
+				printf(", ");
 		}
 	}
 
-	printf("\n");  // Print newline character after all numbers are printed
+	printf("\n");
 }
